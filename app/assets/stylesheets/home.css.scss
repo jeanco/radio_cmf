@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#home
+{
+
+
+
+	//background: #E3B945;
+	color: #272727;
+	font-family: Sansation;
+	font-size: 0.8em;
+	line-height: 1.3;
+	text-align:justify;	
+	//padding: 1em -1em 2.5em 0.9em;
+	 margin: -2em -1em 2.5em 0.9em;    //-0.2em
+	//background:#FDE27F;
+	//border-top: solid 4px #0ca9e4;
+	//padding: 0.5em 0; /*Borde*/
+	border-radius: 0.5em;
+	box-shadow: #5D656E 2px 1px 5px;
+	padding: 0.1em 1em 0.8em 1em;
+}
+
+#home h3 , h4 , h6
+{
+font-family: Ubuntu;
+color: #393845;
+text-align:center;
+}
+
+

@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+#main
+{ background:#1A1A1A;
+
+}
+
+body 
+{
+	background: #8E284B;
+	color: #EEE;
+	font-family: Ubuntu;
+	font-size: 16px;
+	//text-align: center;
+	padding: 0;
+	
+} 
+
+
+
+
+.content {
+
+  background-color:#DFDFDF;
+  
+  padding: 10px;
+  margin: -0.08em 0 0 0 ; /* negative indent the amount of the padding to maintain the grid system */ // -3.1em
+  -webkit-border-radius: 0 0 0.6em 0.6em;
+  -moz-border-radius: 0 0 0.5em 5em;
+  border-radius: 0 0 0.6em 0.6em;
+  -webkit-box-shadow: 0 0.1em 0.2em rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0.1em 0.2em rgba(0,0,0,.15);
+  border-top: solid 4px #0ca9e4;
+  // width: 100% center;
+  
+  
+ 
+}
+header{				//cabeza, banner
+	//padding: 10em 1em 10em 1em;
+	 //margin: 1.5em 15em 0 15em;    //-0.2em
+	text-align:center;
+	background:#1A1A1A ;
+	// border-top: solid 1px #0ca9e4;
+	 //width: 80% center;
+	 
+	
+	 
+  .titulo{
+    line-height: center;
+    font-size:100px;
+   
+    
+  }
+}
+footer{		//pie de pagina
+	border-top: solid 4px #0ca9e4;
+	background:#233042;
+	padding: 0.5em 0; /*Borde*/
+	text-align:center;	
+	line-height: 0.1;  /*Interlineado*/
+	font-size: 0.7em;
+	color: #FFFFFF;
+}
+
+
+
+#nav
+{
+//background:#233042;
+
+	padding: -1em -5em 5em 5em; /*Borde*/
+	//text-align:center;	
+	line-height: 0.5;  /*Interlineado*/
+	font-size: 0.8em;
+	width: 700px;
+}
+
+
+
+#main  ul //
+{
+	background:#F4DE8F;
+	color:#FFFFFF;
+	//padding: -1em -5em 5em 5em; /*Borde*/
+	//text-align:center;	
+	//line-height: 0.5;  /*Interlineado*/
+	//font-size: 0.8em;
+	//width: 700px;
+	margin:-1.5em -1.8em  1em  -2.1em;
+	
+
+}
+
+
+#menu-der 
+{
+
+	
+	background-color: #FFB732;
+	color: #343229;
+	margin-right: -1em;
+	margin-left: 1.3em;
+	//margin:-2em -1em 5em 5em;
+	width: 11.3em;
+	text-align: center;
+	font-family: ubuntu;
+	font-size: 14px;
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	
+}
+
+#noticias 
+{
+
+	
+	background-color: #F4DE8F;
+	color: #343229;
+	margin-right: -1em;
+	margin-left: 1.3em;
+	//margin:-2em -1em 5em 5em;
+	width: 10.5em;
+	text-align: center;
+	font-family: ubuntu;
+	font-size: 14px;
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	
+}
+
+
+
+
+
+
+#imagen_portada
+{
+	background: #E1C359 ;
+	
+	
+	//text-align:center;	
+	//line-height: 0.1;  /*Interlineado*/
+	//font-size: 0.7em;
+	// width: 20px center;
+	
+
+	//width: 800px ;
+	
+	//margin: 0 0 1em 0;
+	
+	//
+	display: block;
+	
+	width: 943px;
+		
+	padding: 3em 0 1em 0; /*Borde*/
+	margin: 0 auto;
+	
+}
+
+// le damos estilo al menu
+#menu-principal 
+{
+
+	height:40px;
+	//background-color: #09172f;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+	width: 700px;
+	
+	
+}
+
+#contenido_central
+{
+
+	//background-color: #09172f;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+	//margin:-2em -1em 5em 5em;
+
+}
+
+#cabecera //esto es el estilo de la cabecera de todos los contenidos....
+{
+	padding: 0;
+	 margin: -0.7em -1em 2em 0.7em;    //-0.2em
+	text-align:center;
+	background:#F4DE8F;
+	
+	//border-top: solid 4px #0ca9e4;
+	
+	//padding: 0.5em 0; /*Borde*/
+	
+	
+}
+
+#cabecera h6   //cambias el color de la cabecera de los contenidos
+{
+color: #272727;
+border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.3) 5px 5px 5px;
+
+}

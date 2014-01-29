@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Radio Cristomorfosis" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Hackday" %>">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= yield(:head) %>
+</head>
+
+
+
+<body class="<%= controller_name %> <%= action_name %>">
+
+
+
+
+	  <div    class="navbar navbar-fixed-top navbar-inverse">
+      <nav class="navbar-inner">
+        <div class="container">
+           
+        </div>
+      </nav>
+    </div>
+
+
+
+
+    <div id= "menu-principal" class="navbar navbar-fixed-top navbar-inverse">
+      <nav class="navbar-inner">
+        <div class="container">
+            <!-- reder layout navigation -->
+            <%= render 'layouts/navigation' %>
+        </div>
+      </nav>
+    </div>
+    
+    <header >
+		
+		
+   <!--     <div  class="row-fluid">	
+        <div class="span2"></div>
+			<div id= "imagen_portada" class="span8"><%= image_tag("logo-fondo.png", size:"500x600") %></div>
+			<!-- <div class="span8 titulo">
+				<h1>Radio Cristomorfosis</h1>
+				<h4>"Mas que musica, un momento de reflexion"</h4>						
+			</div> -->
+           <!-- <div class="span10"><%= image_tag("logo_3.png", size:"450x1200" ) %></div> -->
+           
+           <div class="span2"></div>
+		</div> -->
+		
+		
+		
+		
+		
+		<div class="banner">
+            <div id="myCarousel" class="carousel slide banner-container">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"><%= image_tag("logo-fondo.png", size:"300x600") %></div>
+                    <div class="item"><%= image_tag("logo-soplandovida.png", size:"500x600") %></div>
+                    <div class="item"><%= image_tag("logo-gravedadcero.png", size:"500x600") %></div>
+                </div>
+
+                <!-- Carousel nav -->
+                <a class="control left" href="#myCarousel" data-slide="prev"><%= image_tag("left.jpg") %></a>
+                <a class="control right" href="#myCarousel" data-slide="next"><%= image_tag("right.jpg") %></a>
+            </div>
+        </div>
+		
+		
+		
+	
+		
+	</header>
+	
+	
+	
+	
+    <div id="main" role="main">
+      <div class="container"> 
+        <div class="content">
+			<div class="row-fluid">
+
+                <section id="menu-izq">
+                    <div class="span2">
+                        <div class="well sidebar-nav">
+                            <ul class="nav nav-list">
+								 <li class="nav-header">MENU</li>
+								 <li class="active"><%= link_to "Inicio" %></li>
+                                <li><%= link_to "Encuestas" %></li>
+                                <li><%= link_to "Quienes somos" %></li>
+                                <li><%= link_to "Descargas" %></li>
+                                <li><%= link_to "Videos" %></li>
+                                
+                                <li class="nav-header">PROGRAMACION</li>                  
+              
+                                <li><%= link_to "Graveda Cero"%></li>
+                                <li><%= link_to "La hora Pepito" %></li>
+                                <li><%= link_to "Soplando Vida" %></li>
+                                <li><%= link_to "En Familia" %></li>
+                                <li class="nav-header">REFLEXIONES</li>
+                                <li><%= link_to "Amor" %></li>
+                                <li><%= link_to "Economicos" %></li>
+                                <li><%= link_to "Familias" %></li>
+                                <li><%= link_to "Noviazgo" %></li>
+                                <li><%= link_to "Deprecion" %></li>
+                                <li class="nav-header">AUSPICIADORES</li>
+                                <li><%= link_to "Basadrinux" %></li>
+                                <li><%= link_to "Basadre.net" %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section >
+                    <div  id="contenido_central" class="span8 ">
+						<div>
+						<header id="cabecera" > <h6>titulo del contenido</h6></header>
+						</div>
+                       <!-- <= render 'layouts/messages' %> -->
+                        <%= yield %>
+                    </div> 
+                </section>
+                
+                <section >
+                    <div  class="span2">
+						
+						<div id="menu-der">
+						  <h4>Escuchanos</h4> 
+						  <object width="240" height="300"><param name="allowscriptaccess" value="always" /><param name="movie" value="http://static.radionomy.com/cdn/flash/BannerEmbed.swf?RadUID=b6f41e6b-2598-4dea-9eb5-4974463d56e3&amp;titlesColor=ffffff&amp;color=7d7d7d&amp;autoPlay=yes&amp;lang=en" /><param name="wmode" value="transparent" /><embed src="http://static.radionomy.com/cdn/flash/BannerEmbed.swf?RadUID=b6f41e6b-2598-4dea-9eb5-4974463d56e3&amp;titlesColor=ffffff&amp;color=7d7d7d&amp;autoPlay=yes&amp;lang=en" wmode="transparent" type="application/x-shockwave-flash" allowscriptaccess="always" width="155" height="200"></embed></object>
+                       
+                       
+                       <span>Estas escuchando Radio Cristomrofosis</span>
+                       
+						</div>
+						
+						<div id="noticias">
+						
+						 <h4>Noticias</h4>
+						
+						</div>
+                     
+                       
+                       
+                   
+                       
+                       
+                       
+                    </div>
+                </section>
+                
+                
+
+          </div>
+          
+        </div>
+      </div> <!--! end of .container -->
+    </div> <!--! end of #main -->
+    
+    
+    
+    <footer>
+		<div class="row-fluid">	
+			
+			  <div class="span3"></div>
+			 <div class="span5">
+			<h5>Contactenos</h5>
+			<p>Empresa Sheep developer - Ciudad Nueva - Av. Internacional - Central Telefónica: 052 311483</p>	
+		  
+			<p>Tacna - PERÚ</p> 
+			</div>
+			 <div class="span1"><%= image_tag("logo.png", size:"55x130" ) %></div>
+			 <div class="span3"></div>
+			
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

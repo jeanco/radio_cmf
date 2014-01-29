@@ -1,0 +1,16 @@
+<!-- <div class="brand"><i class="icon-home"></i></div> -->
+<%= link_to "Cristomorfosis", root_path, :class => 'brand'%>
+<ul id= "nav"  class="nav pull-right" >
+  <li><%= link_to "Quiénes Somos" ,somos_path  %></li>
+  <li><%= link_to "Programacion",programacion_path %></li>
+  <li><%= link_to "Contactanos" ,contactanos_path%></li>
+  <li>		
+	<form class="navbar-search" action="/artists/search">
+		<input class="search-query input-medium" type="text" name="q" placeholder="buscar">
+			<i class="icon-search icon-white"></i>
+		</input>
+	</form>
+  </li>
+  <li class="divider-vertical"></li>	
+ 
+</ul>

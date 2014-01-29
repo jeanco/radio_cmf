@@ -1,0 +1,72 @@
+.banner
+{
+	background: #E1C359 ;
+	
+	
+	//text-align:center;	
+	//line-height: 0.1;  /*Interlineado*/
+	//font-size: 0.7em;
+	// width: 20px center;
+	
+
+	//width: 800px ;
+	
+	//margin: 0 0 1em 0;
+	
+	//
+	
+	
+	width: 943px;
+		
+	padding: 3em 0 3em 0; /*Borde*/
+	margin: 0 auto;
+	display: block;
+}
+
+/*NEW*/
+.banner-container
+{
+	margin: 0 auto;
+	margin-bottom: 0px !important;	
+	width: 943px;
+}
+
+.banner img
+{	
+	/*NEW*/
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+}
+
+/*NEW*/
+.control
+{
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	
+	opacity: 0.5;
+
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+/*NEW*/
+.control:hover
+{
+	opacity: 1;
+}
+
+/*NEW*/
+.control.right {
+	right: 15px;
+	left: auto;
+}
